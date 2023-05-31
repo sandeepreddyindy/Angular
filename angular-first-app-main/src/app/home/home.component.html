@@ -1,0 +1,60 @@
+<div class=" container p-4 shadow-lg mt-5 wrapper bg-white rounded-3">
+    <h1 class="mb-4 text-center">Book a Flight</h1>
+    <form>
+        <div class="row mb-3">
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trip-type" id="round-trip" value="round-trip"
+                        checked>
+                    <label class="form-check-label" for="round-trip">
+                        Round Trip
+                    </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trip-type" id="one-way" value="one-way">
+                    <label class="form-check-label" for="one-way">
+                        One Way
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <label for="from" class="form-label">From</label>
+                <input type="text" class="form-control" id="from" placeholder="Enter departure city">
+            </div>
+            <div class="col-sm-6">
+                <label for="to" class="form-label">To</label>
+                <input type="text" class="form-control" id="to" placeholder="Enter arrival city">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-5">
+                <label for="depart" class="form-label">Departure Date</label>
+                <input type="date" class="form-control" id="depart">
+            </div>
+            <div class="col-5">
+                <label for="return" class="form-label">Return Date</label>
+                <input type="date" class="form-control" id="return">
+            </div>
+            <div class="col-2 mt-3 pt-3">
+                <div class="dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Passengers
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-3 mx-auto">
+            <button type="submit" class="btn btn-primary">Search Flights</button>
+        </div>
+    </form>
+</div>
